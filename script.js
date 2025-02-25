@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       // Si los datos aún no se han cargado, los cargamos
       if (Object.keys(data).length === 0) {
-        const response = await fetch("verses.json");
+        const response = await fetch("json/verses.json");
         data = await response.json(); // Guardamos los datos en la variable 'data'
       }
 
