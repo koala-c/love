@@ -92,22 +92,6 @@ section {
     text-wrap: wrap;
 }
 
-button {
-    background: #4a3629;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 100%;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #594031;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -116,60 +100,74 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.inspo {
+.titlebutton {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .buttons {
-    height: 45px;
-    width: 45px;
+    height: 40px !important;
+    width: 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #4a3629;
+    color: #ffffff;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons:hover {
+    background: #7b5a46;
 }
 
 .buttons span {
     font-size: x-large;
 }
 
-#seccion1 div {
-    flex: 1;
+.versiculo {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-}
-
-#seccion1 div button {
-    height: 50px;
-    width: 50px;
-}
-
-#seccion1 div p {
-    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 #versiculo-numero {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff758c;
-    color: white;
+    color: #ff758c;
     font-weight: bold;
-    font-size: larger;
-    height: 30px;
-    width: 30px;
-    padding: 5px;
-    margin-right: 10px;
+    font-style: italic;
+    font-size: large;
+    height: 40px !important;
+    width: 40px !important;
     border-radius: 100%;
 }
 
 #versiculo-texto {
+    width: 70%;
+    padding: 0px 10px;
+    text-align: justify;
+    font-style: italic;
+}
+
+select {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-wrap: wrap;
+    font-size: large;
+    font-weight: bold;
+    color: #ff758c;
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid #ff758c;
+}
+
+select:focus {
+    outline: none;
 }
